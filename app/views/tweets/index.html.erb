@@ -1,0 +1,21 @@
+<div class="form_main">
+  <div class="form">
+    <div class="form_space">
+        <%= form_with(model: @tweet, local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "今何してる？" , rows: "10",class: "text" %>
+    </div>
+    <div class="form_btn">
+       <%= form.submit "SEND",class: "send_btn" %>
+       <% end %>
+    </div>
+  </div>
+  <div class="tweet_main">
+    <% @tweets.each do |tweet|%>
+    <div class="tweet_main_message">
+      <%= simple_format(tweet.text) %>
+       <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete,class: "more_list_destroy"%>
+       <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
+    </div>
+     <% end %>
+  </div>
+</div>

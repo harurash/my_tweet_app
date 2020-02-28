@@ -1,0 +1,57 @@
+.form_main{
+  height: 100%;
+  width: 100%;
+  
+}
+
+.form{
+  height: 100px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form_space{
+  height: 80%;
+  width:calc(100% - 80px);
+  background-color: whitesmoke;
+  opacity: 0.9;
+}
+
+.form_btn{
+  height: 60px;
+  width: 80px;
+  margin-left: 5px;
+  background-color: #1b9bff;
+}
+
+.text{
+  height: 80px;
+  width: 100%;
+  font-size: 20px;
+  border: 1px solid;
+}
+.send_btn{
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  background-color: #d2d2d2;
+}
+
+.tweet_main{
+  height: 80%;
+  width: 80%;
+  margin: 20px auto;
+  background-color:#d2d2d2;
+  opacity: 0.8;
+  overflow:scroll;
+}
+
+.tweet_main_message{
+  height:100px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid;
+}
